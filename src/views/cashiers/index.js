@@ -7,10 +7,6 @@ const Items = React.lazy(() =>
     import('./items')
 );
 
-const Merchants = React.lazy(() =>
-    import('./merchants')
-);
-
 const Cashiers = ({ match }) => (
     <AppLayout>
         <div className="dashboard-wrapper">
@@ -20,10 +16,6 @@ const Cashiers = ({ match }) => (
                     <Route
                         path={`${match.url}/items`}
                         render={props => <Items {...props} />}
-                    />
-                    <Route
-                        path={`${match.url}/merchants`}
-                        render={props => <Merchants {...props} />}
                     />
                     <Redirect to="/error" />
                 </Switch>

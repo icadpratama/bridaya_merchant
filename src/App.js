@@ -32,9 +32,6 @@ const ViewConsultation = React.lazy(() =>
 const ViewData = React.lazy(() =>
   import('./views/data')
 );
-const ViewInformation = React.lazy(() =>
-  import('./views/information')
-);
 const ViewUser = React.lazy(() =>
   import('./views/user')
 );
@@ -115,10 +112,6 @@ class App extends Component {
                   <Route
                     path="/data"
                     render={props => <ViewData {...props} />}
-                  />
-                  <Route
-                    path="/information"
-                    render={props => <ViewInformation {...props} />}
                   />
                   <Route
                     path="/user"

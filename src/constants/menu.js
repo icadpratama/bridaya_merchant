@@ -31,11 +31,6 @@ const data = [{
     label: "menu.cashiers",
     to: "/cashiers",
     subs: [{
-      icon: "iconsminds-home-1",
-      label: "menu.merchants",
-      to: "/cashiers/merchants"
-    },
-    {
       icon: "iconsminds-chef-hat",
       label: "menu.items",
       to: "/cashiers/items"
@@ -102,32 +97,6 @@ const data = [{
       label: "menu.reconsiliation",
       to: "/capital/reconsiliation/index"
     }]
-  },
-  {
-    id: "information",
-    icon: "iconsminds-pantone",
-    label: "menu.information",
-    to: "/information",
-    subs: [
-      {
-        icon: "simple-icon-credit-card",
-        label: "menu.product",
-        to: "/information/product"
-      }
-    ]
-  },
-  {
-    id: "consultation",
-    icon: "iconsminds-headset",
-    label: "menu.consultation",
-    to: "/consultation",
-    subs: [
-      {
-        icon: "simple-icon-bubbles",
-        label: "menu.chat",
-        to: "/consultation/chat"
-      }
-    ]
   }
 ];
 export default data;
